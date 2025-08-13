@@ -44,7 +44,7 @@ namespace Assignment_6._3
             }
             size++;
         }
-        public Node<T>? RemoveFirst()
+        public T? RemoveFirst()
         {
             if (IsEmpty)
                 throw new InvalidOperationException("Cannot remove nodes from an empty list!");
@@ -58,7 +58,7 @@ namespace Assignment_6._3
                 if (IsEmpty)
                     tail = null;
 
-                return current;
+                return current.Value;
             }
         }
         public void Display()
